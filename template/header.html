@@ -1,0 +1,46 @@
+<br>
+<h3>
+    <a href="{{ url }}">PR #{{ number }}</a> {{ title }}
+</h3>
+<table>
+    <tr>
+        <td><b>Creator</b></td>
+        <td><a href="https://github.com/{{ creator_user }}">{{ creator_name }} ({{ creator_user }})</a></td>
+    </tr>
+    <tr>
+        <td><b>Create Time</b></td>
+        <td>{{ created_at }}</td>
+    </tr>
+    <tr>
+        <td><b>Merger</b></td>
+        <td><a href="https://github.com/{{ merged_by_user }}">{{ merged_by_name }} ({{ merged_by_user }})</a></td>
+    </tr>
+    <tr>
+        <td><b>Merger Time</b></td>
+        <td>{{ merged_at }}</td>
+    </tr>
+    <tr>
+        <td><b>Commit</b></td>
+        <td><a href="https://github.com/{{organization}}/{{ slug }}/commit/{{ commit }}">{{ commit }}</a></td>
+    </tr>
+    <tr>
+        <td><b>Description</b></td>
+        <td>{{ desc }}</td>
+    </tr>
+    <tr>
+        <td><b>Reviewers</b></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>{{ reviewers }}</td>
+    </tr>
+    <tr>
+        <td><b>Modified Files</b></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>{{ files }}</td>
+    </tr>
+</table>

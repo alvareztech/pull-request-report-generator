@@ -1,0 +1,21 @@
+<html lang="en">
+<head>
+    <title>Pull Request Report: {{ slug }}</title>
+    <style>
+    body { font-family: Helvetica, Arial, sans-serif; }
+    a { color: #007aff; }
+    </style>
+</head>
+
+<body>
+<main>
+    <h1>{{ title }}</h1>
+    <p>
+        <b>Repository:</b> <a href="https://github.com/{{organization}}/{{ slug }}">{{ slug }}</a><br>
+        <b>Version:</b> {{ version }}<br>
+        <b>Date:</b> {{ date }}<br>
+    </p>
+    <p>{{ content }}</p>
+</main>
+</body>
+</html>
